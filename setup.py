@@ -22,10 +22,6 @@ setuptools.setup(
     ],
     package_dir={"": "."},
     packages=setuptools.find_packages(where="."),
-    install_requires=[
-        "protobuf<=3.19.4; python_version<'3.7'",
-        "protobuf<=3.19.4; python_version>='3.7'"
-    ],
     entry_points={
         'console_scripts': [
             'cyber_record = cyber_record.main:main',
